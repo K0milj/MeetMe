@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body div {
+  height: 100vh;
+  width: 50%;
+}
+
+body .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("/img/blob.svg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 50px;
+  cursor: default;
+}
+
+body .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+body .right #signup {
+  display: none;
+}
+
+body .right #signup-btn {
+  display: none;
+}
+
+body .right button {
+  padding: 10px 25px;
+  background: #8f48ac;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+body .right button:hover {
+  background-color: #af58d1;
+  cursor: pointer;
+}
+
+body .right form {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 40px 20px;
+  border-radius: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: 0.5s showup ease;
+          animation: 0.5s showup ease;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes showup {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+body .right form .heading {
+  color: #252525;
+}
+
+body .right form h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+body .right form input {
+  margin: 10px 0;
+  width: 100%;
+}
+
+body .right form hr {
+  width: 100%;
+  margin: 10px 0;
+}
+
+body .right form input[type='email'], body .right form input[type='password'], body .right form input[list], body .right form input[type='text'] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+}
+
+body .right form input[type='email']:focus, body .right form input[type='password']:focus, body .right form input[list]:focus, body .right form input[type='text']:focus {
+  outline: 1px solid #60b646;
+}
+
+body .right form input[type='submit'] {
+  padding: 10px 25px;
+  background: #60b646;
+  border: none;
+  color: white;
+  border-radius: 40px;
+}
+
+body .right form input[type='submit']:hover {
+  background-color: #72db52;
+  cursor: pointer;
+}
+
+body .right form a {
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+body .right form a:visited {
+  color: blue;
+}
+
+body .right footer {
+  margin: 40px 0;
+  text-align: center;
+}
+
+body .right footer a {
+  color: #60b646;
+  text-decoration: none;
+}
+
+body .right footer a:hover {
+  color: #72db52;
+}
+
+#moon {
+  position: absolute;
+  color: #8f48ac;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+}
+
+#moon:hover {
+  cursor: pointer;
+  color: #af58d1;
+  -webkit-transition: .2s padding ease;
+  transition: .2s padding ease;
+  padding: 15px;
+}
+
+#sun {
+  position: absolute;
+  color: #8f48ac;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+#sun:hover {
+  cursor: pointer;
+  color: #af58d1;
+  -webkit-transition: .2s padding ease;
+  transition: .2s padding ease;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body div {
+    width: 100%;
+  }
+  body div:nth-child(1) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    overflow: visible;
+  }
+  body .right {
+    overflow-y: visible;
+  }
+  body .right form {
+    margin-top: 100px;
+    padding: 15px;
+  }
+  #moon, #sun {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  body {
+    overflow: visible;
+  }
+  body .right {
+    overflow-y: visible;
+  }
+  body .right form {
+    margin-top: 100px;
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
